@@ -38,5 +38,39 @@ Chocolatey란? <br>
 ## 3. Ubuntu 설치 <br>
 Ubuntu란? <br>
 ➡️ 리눅스 커널에 다양한 응용프로그램을 추가해 쉽게 설치할 수 있도록 만든 리눅스 배포판 중 하나이다.
+![image](https://user-images.githubusercontent.com/103404357/204324686-26434066-82e3-4f54-b49b-82106c631b2a.png)
 
+<details>
+<summary>Ubuntu 설치 당시 오류 해결 방법</summary>
+<div markdown="1">
+
+<br>Ubuntu 설치 당시 오류가 2가지 발생했다. <br>
+1. ```Installing, this may take a few minutes... WslRegisterDistribution failed with error: 0x800701bc Error: 0x800701bc WSL 2? ?? ?? ?? ????? ?????. ??? ??? https://aka.ms/wsl2kernel? ??????. Press any key to continue...'``` <br>
+위의 메세지가 뜨며 오류 발생 <br>
+
+➡ 해결 방법 : WSL2 Linux Kernel Update 를 설치해주면 해결된다.
+![image](https://user-images.githubusercontent.com/103404357/204325403-ef7b8d6c-0ce5-497b-bdbf-c57c376f432c.png)
+
+<br><br>
+
+2. 
+```installing, this may take a few minutes... wslregisterdistribution failed with error: 0x8007019e the windows subsystem for linux optional component is not enabled. please enable it and try again. see https://aka.ms/wslinstall for details. press any key to continue...``` <br>
+위의 메세지가 뜨며 오류 발생 <br>
+
+➡ 해결 방법 : 제어판에서 [Linux용 Windows 하위 시스템] 체크해주면 해결된다.
+![image](https://user-images.githubusercontent.com/103404357/204326327-114b173c-4907-466c-92d0-baf5b2e3802a.png)
+
+</div>
+</details>
+
+### 4. 리눅스 계정 만들기 <br>
+
+![image](https://user-images.githubusercontent.com/103404357/204329373-66de850a-2335-478b-bdcf-7a163890a03e.png)
+
+### 5. WSL2로 업데이트 하기 <br>
+
+`dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart` <br>
+코드를 복사하여 Windows Terminal을 통해 실행한다.
+
+![image](https://user-images.githubusercontent.com/103404357/204330904-6a8d7bb6-c46a-4094-b374-d656b1987292.png)
 
