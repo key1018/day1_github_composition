@@ -69,8 +69,25 @@ Ubuntu란? <br>
 
 ### 5. WSL2로 업데이트 하기 <br>
 
-`dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart` <br>
-코드를 복사하여 Windows Terminal을 통해 실행한다.
+1) `dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart` <br>
+코드를 복사하여 '가상 머신 플랫폼'을 Windows Terminal 통해 실행한다.
 
-![image](https://user-images.githubusercontent.com/103404357/204330904-6a8d7bb6-c46a-4094-b374-d656b1987292.png)
+![image](https://user-images.githubusercontent.com/103404357/204330904-6a8d7bb6-c46a-4094-b374-d656b1987292.png)<br>
+
+2) WSL2를 기본 버전으로 실행 <br>
+`wsl --set-default-version 2` 코드를 통해 실행한다.<br>
+
+![image](https://user-images.githubusercontent.com/103404357/204332181-894b2679-13ab-4558-9840-337d28e0d7a3.png) <br>
+
+### 6. Ubuntu에 WSL2에 대한 사용 설정 <br>
+
+Windows Termianl에 `wsl --set-version Ubuntu 2` 코드를 삽입하여 WSL2 버전으로 업데이트 한다. <br>
+`wsl -l -v`을 통해 WSL 버전을 확인한다. <br>
+
+![image](https://user-images.githubusercontent.com/103404357/204336686-edca1310-e3e3-47b2-afc4-bd8617e2a2ca.png) <br>
+
+➡️ 설치 완료 화면
+
+![image](https://user-images.githubusercontent.com/103404357/204334877-69eb0fa6-46f3-40b8-b529-596702bfe74c.png)
+
 
